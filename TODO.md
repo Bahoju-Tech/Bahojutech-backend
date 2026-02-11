@@ -1,0 +1,3 @@
+- [x] Update models/Admin Dashboard/institute.js: Change hasGraduated from Boolean to String with enum values like "Enrolled", "Graduated", "In Progress". Set default to "Enrolled".
+- [x] Fix controllers/instituteController.js: Correct the destructuring in register_student (remove hasGraduated = "Boolean"), add hasGraduated to destructuring, and include it in Institute.create and update_single_student.
+- [ ] Test the changes: Start the server and test registering/updating a student with hasGraduated field.
