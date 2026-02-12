@@ -270,6 +270,66 @@ For Gmail, you'll need to:
   lastUpdated: Date,
   updatedBy: ObjectId
 }
+
+```
+### Course Model
+```javascript
+{
+  courseTitle: String,
+  subtitleText: String,
+  duration: String,
+  courseFormat: String,
+  whatYouWillLearn: String,
+  learningLevel: String,
+  status: String,
+  category: String,
+  courseDescription : String,
+  pricing: String,
+  whatIncludes: String
+}
+```
+
+
+
+```
+### Institute Model
+```javascript
+{
+       firstName: String,
+        lastName: String,
+        email: String,
+        phoneNumber:Number,
+        course: String,
+        learningLevel: String,
+        paymentType: String,
+        amountPaid: String,
+        balance: String,
+        hasGraduated: Boolean,
+        category: String,
+        status: String,
+        isActive: Boolean
+}
+```
+
+
+
+```
+### Instructor Model
+```javascript
+{
+      firstName:String,
+        lastName:String,
+        email:String,
+        phoneNumber:Number,
+        expertise:String,
+        status:String,
+        regisAt:String,
+        isActive:Boolean,
+        experience:String,
+        areaOfInterest:String,
+        linkToPortfolio:String,
+        bio:String
+}
 ```
 
 ## 🚀 Deployment
