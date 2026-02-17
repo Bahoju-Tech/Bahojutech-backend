@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const newsletterSchema = new mongoose.Schema({
-  title: {
+  email: {
     type: String,
     required: [true, 'Email is required'],
   },
