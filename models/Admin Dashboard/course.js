@@ -5,7 +5,6 @@ const courseSchema = new mongoose.Schema({
         type: String,
         required: [true, 'Please input your preferred course'],
         trim: true,
-        maxlength: [10, 'cannot be more than 10 characters']
     },
 
     subtitleText: {
