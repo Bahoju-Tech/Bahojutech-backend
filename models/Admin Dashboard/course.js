@@ -21,7 +21,7 @@ const courseSchema = new mongoose.Schema({
          enum: [
             "In person and Online",
             "Online",
-            "In person ",
+            "In person",
         ],
         default: null
     },
