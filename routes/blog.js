@@ -25,7 +25,7 @@ router.get('/', async (req, res, next) => {
       query.$or = [
         { title: { $regex: search, $options: 'i' } },
         { excerpt: { $regex: search, $options: 'i' } },
-        { tags: { $in: [new RegExp(search, 'i')] } }
+        { 'tags.type': { $in: [new RegExp(search, 'i')] } }
       ];
     }
 
