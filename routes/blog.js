@@ -147,7 +147,7 @@ router.get('/admin/all', protect, adminOnly, async (req, res, next) => {
     if (category) query.category = category;
     if (search) {
       query.$or = [
-        { title: { $regex: search, $options: 'i' } },
+       { 'tags.type': { $in: [new RegExp(search, 'i')] } },
         { excerpt: { $regex: search, $options: 'i' } }
       ];
     }
